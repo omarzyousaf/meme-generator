@@ -1,0 +1,108 @@
+/* ===================================== */
+/* FOR THE FORM */
+/* ===================================== */
+.head {
+	color: white;
+	line-height: 1.5;
+	text-align: left;
+	background: #778899;
+	font-weight: normal;
+	text-transform: uppercase;
+	/* adds padding to top and bottom */
+	padding: 10px 20px;
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	display: flex;
+	align-items: flex-end;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button {
+	width: 100%;
+	background-color: #f08080;
+	color: white;
+	padding: 12px 20px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	color: black;
+	background-color: #fffaf0;
+	transition: .3s ease;
+}
+
+/* ===================================== */
+/* FOR THE OUTPUT */
+/* ===================================== */
+
+.meme {
+	position: relative;
+	display: inline-block; /* Make the width of box same as image */
+	font-size: 5rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	/* found the code below to put "outline" around text */
+	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 1;
+	transition: .2s ease-in-out;
+}
+
+/* position top text across center */
+.top {
+	position: absolute;
+	color: white;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 10%;
+	text-align: center;
+}
+
+/* position bottom text across center */
+.bottom {
+	position: absolute;
+	color: white;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 10%;
+	text-align: center;
+}
+
+i {
+	position: absolute;
+	opacity: 0;
+	transition: .2 ease-in-out;
+	font-size: 10rem;
+	/* to center icon in middle of picture */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* to fade in the delete icon */
+.meme:hover i {
+	transition: .2s ease;
+	opacity: 1;
+}
+
+/* to fade out everything with hover */
+.meme:hover,
+.meme:hover img,
+.meme:hover div {
+	transition: .2s ease;
+	opacity: .1;
+}

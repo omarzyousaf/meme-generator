@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meme Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    </head>
+    <body>
+        <div class='main'>
+            <section class = 'head'>
+            <h1>I CAN HAZ MEME?</h1>
+            <p>Fill out the form to start creating a meme!</p>
+            <form id='memes'>
+                <label>Image URL
+                    <input type='url' id='imageURL' placeholder="What's the URL of your image?"">
+                </label>
+                <label> Text on Top
+                    <input type='text' id='textOnTop' placeholder="(Optional) What text do you want at the top of the meme?"">
+                </label>
+                <label> Text on Bottom 
+                    <input type='text' id='textOnBottom' placeholder="(Optional) What text do you want at the bottom of the meme?"">
+                </label>
+                <button id="submit" type="submit">Add Meme</button>
+            </form>
+            </section>
+        <div class="results"></div>
+        <script src="app.js" async defer></script>
+        </div>
+    </body>
+</html>
